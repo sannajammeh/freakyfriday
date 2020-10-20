@@ -20,12 +20,16 @@ body {
 
 /* Header */
 .header {
-  background-color: #282828;
+  background-color: var(--black);
+  transition: all 0.3s ease;
   padding: 1rem 1rem;
-  box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   left: 0;
+}
+.headerScrolled {
+  box-shadow: var(--shadow);
+  background-color: #282828;
 }
 .header-logo {
   font-size: 2rem;
@@ -36,7 +40,6 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2rem;
-  text-align: center;
 }
 h2 {
   margin: 0;
@@ -123,5 +126,8 @@ hr {
   .lift-desc {
     padding-left: 4rem;
     flex-basis: 70%;
+  }
+  .header h1 {
+    text-align: center;
   }
 }

@@ -85,5 +85,17 @@
     <footer class="footer">
       <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam?</h4>
     </footer>
+
+    <script>
+      // Add shadow when scrolling down
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          header.className = 'header headerScrolled';
+        } else {
+          header.className = 'header';
+        }
+      });
+    </script>
   </body>
 </html>
